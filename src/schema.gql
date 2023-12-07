@@ -47,9 +47,9 @@ type Query {
 
   """This will be like getting the user profile by his id"""
   userById(id: String!): User!
-  books(limit: Int = 10, skip: Int = 0): GetBooksPaginatedResponse!
-  book(limit: Int = 10, skip: Int = 0, _id: String!): Book!
-  allAuthors(limit: Int = 10, skip: Int = 0): GetAuthorsPaginatedResponse!
+  books(limit: Int = 50, skip: Int = 0): GetBooksPaginatedResponse!
+  book(limit: Int = 50, skip: Int = 0, _id: String!): Book!
+  allAuthors(limit: Int = 50, skip: Int = 0): GetAuthorsPaginatedResponse!
   author(id: String!): Author!
 }
 
